@@ -18,5 +18,10 @@ public class Test {
         InorderTraversal it = new InorderTraversal();
         System.out.println(it.inTraversal(root));
         
+        //测试 144. https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
+        //前序遍历
+        PreorderTraversal pt = new PreorderTraversal();
+        System.out.println(pt.preTraversal(root));
+        
     }
 }
