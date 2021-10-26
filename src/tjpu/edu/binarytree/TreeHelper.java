@@ -5,8 +5,8 @@ package tjpu.edu.binarytree;
  * 用于创建树的测试用例
  */
 public class TreeHelper {
-    static int index;
-    static String[] values;
+    int index;
+    String[] values;
     
     public TreeHelper() {
         
