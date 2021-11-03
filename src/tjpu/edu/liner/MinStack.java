@@ -1,4 +1,4 @@
-package tjpu.edu.stack;
+package tjpu.edu.liner;
 
 import java.util.Deque;
 import java.util.LinkedList;

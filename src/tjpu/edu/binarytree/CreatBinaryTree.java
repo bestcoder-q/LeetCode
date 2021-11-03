@@ -8,12 +8,12 @@ public class CreatBinaryTree {
     //TreeValue
     //构建二叉树的值和值索引
     int index = 0;
-    Integer[] arr = new Integer[]{1,null,2,3};
+    //Integer[] arr = new Integer[]{1,null,2,3};
     
     /*
     创建二叉树
      */
-    public TreeNode creatTree() {
+    public TreeNode creatTree(Integer[] arr) {
         TreeNode node = null;
         if (index < arr.length) {
             if (arr[index] == null) {
@@ -22,8 +22,8 @@ public class CreatBinaryTree {
             }
             node = new TreeNode(arr[index]);
             index++;
-            node.left = creatTree();
-            node.right = creatTree();
+            node.left = creatTree(arr);
+            node.right = creatTree(arr);
         }
         return node;
     }
