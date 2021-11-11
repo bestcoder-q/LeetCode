@@ -35,7 +35,7 @@ public class CreatBinaryTree {
         if (root == null) {
             return;
         } else {
-            System.out.println(root.val + " ");
+            System.out.print(root.val + " ");
             preOrder(root.left);
             preOrder(root.right);
         }
@@ -48,7 +48,7 @@ public class CreatBinaryTree {
             return;
         } else {
             inOrder(root.left);
-            System.out.println(root.val + " ");
+            System.out.print(root.val + " ");
             inOrder(root.right);
         }
     }
