@@ -1,57 +1,74 @@
 package tjpu.edu.manipulatelist;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
 /**
  * Created by Lwq on 2021/11/14 16:06
  * https://leetcode-cn.com/problems/palindrome-linked-list/
  * 234.回文链表
  */
+/*
+    思路：
+    将链表反转，如果是回文链表，反转之后元素顺序相同
+ */
 public class PalindromeList {
     public boolean isPalindrome(ListNode head) {
-        return false;
+        //将原链表元素顺序存在一个list中，因为反转之后链表不能复用
+        List<Integer> list = new ArrayList<Integer>();
+        ListNode p = head;
+        while (p != null) {
+            list.add(p.val);
+            p = p.next;
+        }
+        //将链表反转
+        ListNode reverseHead = reverseList(head);
+        //将反转前存在list中的元素顺序与反转后的元素顺序比较
+        for (Integer it : list) {
+            if (reverseHead.val != it) {
+                return false;
+            }
+            reverseHead = reverseHead.next;
+        }
+        return true;
     }
     
     //反转链表
     public ListNode reverseList(ListNode head) {
-        Stack<ListNode> stack = new Stack<ListNode>();
-        while (head != null) {
-            stack.push(head);
-            head = head.next;
+        if (head == null) {
+            return null;
         }
-        
-        List<ListNode> reverseList = new LinkedList<ListNode>();
-        if (!stack.empty()) {
-            
+        ListNode cur = null;
+        ListNode pre = head;
+        while (pre != null) {
+            ListNode temp = pre.next;
+            pre.next = cur;
+            cur = pre;
+            pre = temp;
         }
-        while (!stack.empty()) {
-            ListNode tempNode = stack.pop();
-            
-        }
-        return reverseList.get(0);
+        return cur;
     }
 
 
     public static void main(String[] args) {
-        List<ListNode> list = new ArrayList<>();
-        list.add(new ListNode(1));
-        list.add(new ListNode(2));
-        list.add(new ListNode(3));
-        list.add(new ListNode(4));
-        ListNode head = list.get(0);
-        for (ListNode listNode : list) {
-            System.out.println(listNode.val);
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(1);
+        ListNode node3 = new ListNode(2);
+        ListNode node4 = new ListNode(1);
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        
+        //遍历链表
+        ListNode p = node1;
+        while (p != null) {
+            System.out.println(p.val);
+            p = p.next;
         }
         
-        PalindromeList pl = new PalindromeList();
-        ListNode reverseListHead = pl.reverseList(head);
-        while (reverseListHead != null) {
-            System.out.println(reverseListHead.val);
-            reverseListHead = reverseListHead.next;
-        }
+        PalindromeList palindromeList = new PalindromeList();
+        System.out.println(palindromeList.isPalindrome(node1));
+
     }
     
 }
