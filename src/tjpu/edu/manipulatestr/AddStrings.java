@@ -6,6 +6,11 @@ package tjpu.edu.manipulatestr;
  * 415. 字符串相加
  */
 public class AddStrings {
+    /*
+        自己的做法和实现：
+        将两个字符串的每一个数分别放到一个数组中，（转换为int类型存放）
+        再定义一个数组用来存储结果（注意这个数组多一位，因为可能存在相加后位数增加的情况）
+     */
     public String addString(String num1, String num2) {
         int arr_length = Math.max(num1.length(), num2.length());
         int[] num1_arr = new int[arr_length];
