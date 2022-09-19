@@ -1,4 +1,4 @@
-package tjpu.edu.manipulatenum;
+package tiangong.edu.manipulatenum;
 
 import java.util.HashSet;
 

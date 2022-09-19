@@ -1,4 +1,4 @@
-package tjpu.edu.manipulatelist;
+package tiangong.edu.manipulatelist;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package tjpu.edu.multithreading;
+package tiangong.edu.multithreading;
 
 /**
  * Created by Lwq on 2022/5/13 17:52

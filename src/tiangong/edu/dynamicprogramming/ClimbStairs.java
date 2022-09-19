@@ -1,4 +1,4 @@
-package tjpu.edu.dynamicprogramming;
+package tiangong.edu.dynamicprogramming;
 
 /**
  * Created by Lwq on 2021/10/15 12:08

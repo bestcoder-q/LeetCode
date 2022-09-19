@@ -1,4 +1,4 @@
-package tjpu.edu.writtentestpreparation;
+package tiangong.edu.writtentestpreparation;
 
 /**
  * Created by Lwq on 2022/9/18 9:29

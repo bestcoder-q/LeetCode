@@ -1,4 +1,4 @@
-package tjpu.edu.binarytree;
+package tiangong.edu.binarytree;
 
 /**
  * Created by Lwq on 2021/10/25 11:26

@@ -1,4 +1,4 @@
-package tjpu.edu.manipulatelist;
+package tiangong.edu.manipulatelist;
 
 /**
  * Created by Lwq on 2021/11/5 15:58

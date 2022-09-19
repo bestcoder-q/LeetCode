@@ -1,4 +1,4 @@
-package tjpu.edu.manipulatearr;
+package tiangong.edu.manipulatearr;
 
 /**
  * Created by Lwq on 2021/10/13 11:56

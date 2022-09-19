@@ -1,4 +1,4 @@
-package tjpu.edu.binarytree;
+package tiangong.edu.binarytree;
 
 import java.util.ArrayList;
 import java.util.List;

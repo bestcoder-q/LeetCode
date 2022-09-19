@@ -1,4 +1,4 @@
-package tjpu.edu.manipulatestr;
+package tiangong.edu.manipulatestr;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package tjpu.edu.twodimensionalarr;
+package tiangong.edu.twodimensionalarr;
 
 /**
  * Created by Lwq on 2021/12/24 11:17

@@ -1,8 +1,4 @@
-package tjpu.edu.binarytree;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+package tiangong.edu.binarytree;
 
 /**
  * Created by Lwq on 2021/10/27 11:14

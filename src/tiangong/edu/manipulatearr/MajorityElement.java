@@ -1,4 +1,4 @@
-package tjpu.edu.manipulatearr;
+package tiangong.edu.manipulatearr;
 
 import java.util.Arrays;
 import java.util.Collection;

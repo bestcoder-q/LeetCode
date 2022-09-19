@@ -1,4 +1,4 @@
-package tjpu.edu.writtentestpreparation;
+package tiangong.edu.writtentestpreparation;
 
 import java.util.ArrayList;
 import java.util.List;

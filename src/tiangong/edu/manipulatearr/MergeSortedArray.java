@@ -1,6 +1,4 @@
-package tjpu.edu.manipulatearr;
-
-import java.util.Arrays;
+package tiangong.edu.manipulatearr;
 
 /**
  * Created by Lwq on 2021/10/19 10:31

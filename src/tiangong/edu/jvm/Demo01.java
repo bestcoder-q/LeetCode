@@ -1,4 +1,4 @@
-package tjpu.edu.jvm;
+package tiangong.edu.jvm;
 
 /**
  * Created by Lwq on 2021/12/25 16:29
